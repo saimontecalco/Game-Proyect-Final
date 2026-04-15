@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://bs07gdfyl0ix0"]
+
+[ext_resource type="Texture2D" uid="uid://osue7txuoujg" path="res://Assets/fourSeasonsPlatformer_ [tileset, version 2.0]/objects_/coin_.png" id="1_c73ev"]
+[ext_resource type="Script" uid="uid://xrf48hc7avj5" path="res://Scrips/ui.gd" id="1_qe48f"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_qe48f")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 3.0
+offset_right = 166.0
+offset_bottom = 106.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 75
+text = "00"
+
+[node name="Node2D" type="Node2D" parent="Control/Label"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Control/Label/Node2D"]
+position = Vector2(-41, 55)
+scale = Vector2(6.125, 6.125)
+texture = ExtResource("1_c73ev")
+hframes = 12
